@@ -36,3 +36,11 @@ Example procedure:
 ```bash
 git log --oneline
 git checkout <known-good-commit>
+
+## Task 2 – Exploratory Data Analysis (EDA)
+
+- Task 2 notebook: `notebooks/Task_2_EDA_Airbnb_Listings.ipynb`
+- Analysis performed using Python, Pandas, Matplotlib, and Seaborn.
+- EDA includes summary statistics, missing-value analysis, categorical analysis, price analysis, outlier detection, correlation analysis, and visualizations.
+- The Task 2 notebook was committed to the repository after completion.
+- Rollback can be performed using the Git history to restore the previous repository version if required.
