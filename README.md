@@ -117,3 +117,54 @@ Task_1_Data_Cleaning/
 ## Conclusion
 
 The Sample Superstore dataset was systematically checked for common data-quality issues. No missing values, complete duplicate records, invalid numerical values, categorical inconsistencies, or date-sequence errors were identified. Potential statistical outliers were reviewed and retained because they represented plausible business observations.
+---
+
+# Task 2 – Exploratory Data Analysis (EDA)
+
+## Project Overview
+
+This project focuses on Exploratory Data Analysis (EDA) of an Airbnb Listings dataset from New York City.
+
+The objective is to understand the dataset, identify patterns and relationships, detect potential outliers, and generate meaningful insights using Python, Pandas, Matplotlib, and Seaborn.
+
+## Dataset
+
+- Dataset: Airbnb Listings – New York City
+- Records: 30,234 listings
+- Columns: 90
+
+## EDA Performed
+
+- Dataset structure and data types
+- Missing-value analysis
+- Duplicate-record check
+- Numerical summary statistics
+- Categorical data analysis
+- Price data cleaning and analysis
+- Distribution analysis using histograms
+- Room-type price comparison
+- Neighbourhood price comparison
+- Outlier detection using the IQR method
+- Correlation analysis using a heatmap
+- Relationship analysis using scatter plots
+- Time-based analysis using a line chart
+
+## Key Findings
+
+1. Airbnb prices are right-skewed, with most listings concentrated at lower-to-moderate prices.
+2. Hotel rooms have the highest average price among the room types in this dataset.
+3. Accommodation capacity has a moderate positive correlation with price (0.47).
+
+## Tools Used
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+## Notebook
+
+The complete EDA analysis is available in:
+
+`notebooks/Task_2_EDA_Airbnb_Listings.ipynb`
