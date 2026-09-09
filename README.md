@@ -126,7 +126,11 @@ The Sample Superstore dataset was systematically checked for common data-quality
 This project focuses on Exploratory Data Analysis (EDA) of an Airbnb Listings dataset from New York City.
 
 The objective is to understand the dataset, identify patterns and relationships, detect potential outliers, and generate meaningful insights using Python, Pandas, Matplotlib, and Seaborn.
+## Dataset Source
 
+The Airbnb Listings dataset was obtained from Inside Airbnb and used for educational exploratory data analysis.
+
+Source: Inside Airbnb – Explore the Data
 ## Dataset
 
 - Dataset: Airbnb Listings – New York City
