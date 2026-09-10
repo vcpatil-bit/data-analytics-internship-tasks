@@ -221,3 +221,47 @@ To create an interactive sales dashboard using the Superstore dataset to monitor
 - Jupyter Notebook containing the analysis
 - Excel interactive sales dashboard
 - Dashboard supporting PivotTables and PivotCharts
+- ## Interview Questions
+
+### 1. How do you decide which KPIs belong on a dashboard vs. in a detailed report?
+
+I select KPIs based on the business objective and the decisions the user needs to make quickly.
+
+A dashboard should contain a small number of important KPIs that provide an immediate overview, such as Total Sales, Total Profit, Units Sold, and Profit Margin.
+
+Detailed reports can contain supporting metrics, detailed tables, calculations, and transaction-level information for deeper analysis.
+
+For this Task 3 dashboard, I selected Total Sales, Total Profit, Total Units Sold, and Profit Margin because they provide a quick view of overall sales performance.
+
+### 2. What makes a dashboard "interactive" rather than just a static chart?
+
+A static chart only displays information and does not allow the user to change the analysis.
+
+A dashboard becomes interactive when users can filter, drill down, or change the view of the data without manually recreating the charts.
+
+In my Task 3 dashboard, I used Excel PivotTables, PivotCharts, and slicers. The Region and Month slicers allow users to filter the dashboard, and the charts update based on those selections.
+
+For example, selecting West from the Region slicer updates the dashboard charts to show the sales performance for the West region.
+
+### 3. How would you design a dashboard differently for an executive vs. an operations manager?
+
+I would design the dashboard based on the user's decision-making needs.
+
+For an executive:
+- Focus on high-level KPIs
+- Revenue and profit trends
+- Profit margin
+- Overall business performance
+- Important exceptions or alerts
+- Simple and clean visual design
+
+For an operations manager:
+- Include more operational details
+- Regional and category performance
+- Product-level performance
+- Units sold
+- Monthly trends
+- Underperforming or negative-profit products
+- More filters for detailed investigation
+
+In short, an executive dashboard answers "How is the business performing?", while an operations dashboard answers "What is happening and where do I need to take action?"
