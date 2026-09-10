@@ -172,3 +172,52 @@ Source: Inside Airbnb – Explore the Data
 The complete EDA analysis is available in:
 
 `notebooks/Task_2_EDA_Airbnb_Listings.ipynb`
+# Task 3 – Simple Sales Dashboard Design
+
+## Objective
+
+To create an interactive sales dashboard using the Superstore dataset to monitor sales performance across time, regions, product categories, and top-selling products.
+
+## Tools Used
+
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+- Microsoft Excel
+- PivotTables
+- PivotCharts
+- Slicers
+
+## Key Performance Indicators
+
+- Total Sales: ₹2,326,534.35
+- Total Profit: ₹292,296.81
+- Total Units Sold: 38,654
+- Profit Margin: 12.56%
+
+## Dashboard Visualizations
+
+1. Monthly Sales Trend
+2. Sales by Region
+3. Sales by Product Category
+4. Top 10 Products by Sales
+
+## Interactive Filters
+
+- Region
+- Month
+
+## Key Insights
+
+- The West region generated the highest overall sales.
+- Technology was the highest-selling product category.
+- Monthly sales showed considerable variation across the analyzed period.
+- Some products generated negative profit despite having sales, indicating potential pricing or discount-related issues.
+- The interactive slicers allow users to analyze sales performance by region and month.
+
+## Deliverables
+
+- Jupyter Notebook containing the analysis
+- Excel interactive sales dashboard
+- Dashboard supporting PivotTables and PivotCharts
