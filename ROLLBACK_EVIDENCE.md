@@ -44,3 +44,62 @@ git checkout <known-good-commit>
 - EDA includes summary statistics, missing-value analysis, categorical analysis, price analysis, outlier detection, correlation analysis, and visualizations.
 - The Task 2 notebook was committed to the repository after completion.
 - Rollback can be performed using the Git history to restore the previous repository version if required.
+
+# Task 3 – Rollback Evidence
+
+## Project
+Simple Sales Dashboard Design
+
+## Purpose
+This file documents the backup and rollback points maintained during Task 3 development.
+
+## Original Workbook
+`Task_3_Sales_Dashboard.xlsx`
+
+The original workbook is retained as a backup copy.
+
+## Final Workbook
+`Task_3_Sales_Dashboard_Final.xlsx`
+
+This is the final submitted version containing the completed interactive dashboard.
+
+## Rollback Procedure
+
+If the final workbook becomes corrupted or an unwanted change is made:
+
+1. Close the Excel workbook.
+2. Keep the final workbook unchanged for reference.
+3. Open the backup workbook:
+   `Task_3_Sales_Dashboard.xlsx`
+4. If required, copy the required dashboard components from the backup.
+5. Save the restored version as a new file rather than overwriting the backup.
+6. Verify that the dashboard, PivotTables, PivotCharts, and slicers are working correctly.
+
+## Backup Files
+
+- `Task_3_Sales_Dashboard.xlsx` – Original/backup workbook
+- `Task_3_Sales_Dashboard_Final.xlsx` – Final completed workbook
+
+## Dashboard Components Preserved
+
+- KPI Cards
+- Monthly Sales Trend
+- Sales by Region
+- Sales by Product Category
+- Top 10 Products by Sales
+- Region Slicer
+- Month Slicer
+- PivotTables
+- PivotCharts
+
+## Data Source
+
+`../data/cleaned/superstore_cleaned.csv`
+
+## Rollback Status
+
+Backup workbook retained successfully.
+
+Final workbook created successfully.
+
+Task 3 dashboard is ready for submission.
