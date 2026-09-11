@@ -261,6 +261,77 @@ For an operations manager:
 - Product-level performance
 - Units sold
 - Monthly trends
+- 
+- # Task 4 – Data Visualization and Storytelling
+
+## Project Overview
+
+This project focuses on transforming the Sample Superstore dataset into an interactive Power BI dashboard and presenting business insights through data visualization and storytelling.
+
+The dashboard follows a clear narrative:
+
+**Context → Problem → Evidence → Recommendation**
+
+## Tool Used
+
+- Power BI Desktop
+- Sample Superstore Dataset
+
+## Dashboard Pages
+
+### 1. Executive Overview
+Provides a high-level view of:
+- Total Sales
+- Total Profit
+- Total Quantity Sold
+- Monthly Sales Performance
+
+### 2. Regional Performance
+Analyzes:
+- Sales by Region
+- Profit by Region
+- Profit Margin by Region
+
+### 3. Category & Sub-Category Analysis
+Analyzes:
+- Sales by Category
+- Profit by Category
+- Profit by Sub-Category
+
+### 4. Profitability Problem Analysis
+Examines:
+- Sales vs Profit by Sub-Category
+- Average Discount vs Profit
+
+### 5. Business Recommendations
+Summarizes key findings and provides actionable recommendations based on the analysis.
+
+## Key Business Insights
+
+- The West region generates the highest sales and profit.
+- The Central region has the lowest profit margin.
+- Technology is the strongest category in terms of sales and profit.
+- Furniture generates substantial sales but comparatively lower profit.
+- Some sub-categories generate negative profit.
+- Several sub-categories show weak profitability at relatively higher discount levels.
+
+## Business Recommendations
+
+1. Review pricing, discounts, product mix, and operating costs in the Central region.
+2. Continue investing in high-performing Technology products while monitoring margins.
+3. Analyze Furniture pricing and discounting to improve profitability.
+4. Establish discount thresholds for low-margin and loss-making sub-categories.
+5. Study successful practices in the West region and evaluate whether they can be applied to other regions.
+
+## Priority Action
+
+Prioritize profitability improvement in the Central region and low-margin sub-categories while maintaining growth in high-performing Technology products.
+
+## Deliverable
+
+The main deliverable is the Power BI report:
+
+`Task_4_Data_Visualization_Storytelling.pbix`
 - Underperforming or negative-profit products
 - More filters for detailed investigation
 
