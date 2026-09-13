@@ -336,3 +336,97 @@ The main deliverable is the Power BI report:
 - More filters for detailed investigation
 
 In short, an executive dashboard answers "How is the business performing?", while an operations dashboard answers "What is happening and where do I need to take action?"
+
+ Task 6
+
+Objective
+
+Practice everyday Excel functions used in analyst work:
+
+VLOOKUP
+
+XLOOKUP
+
+IF
+
+SUMIF / SUMIFS
+
+COUNTIF / COUNTIFS
+
+LEFT / MID / RIGHT
+
+LEN / TRIM
+
+INDEX/MATCH
+
+IFERROR
+
+Dataset
+
+Sample Superstore transactional sales data.
+
+The source dataset used in the earlier analysis contains 10,194 rows and covers 2023-01-03 to 2026-12-30. The present Task 6 workbook intentionally uses a smaller practice extract because the task asks for a small transactional dataset.
+
+Workbook Structure
+
+Sheet
+
+Purpose
+
+Start_Here
+
+Task objective, scope and submission checklist
+
+Transactions
+
+Transaction-level data plus live formula columns
+
+Customer_Lookup
+
+Lookup table for VLOOKUP
+
+Product_Lookup
+
+Lookup table for XLOOKUP
+
+Formula_Demo
+
+Live formulas, expected results and usage notes
+
+Summary
+
+Formula-driven summary and coverage
+
+Interview_QA
+
+Interview questions and practical answers
+
+Validation
+
+Edge-case and formula validation tests
+
+Analyst Approach
+
+Kept the transactional structure intact.
+
+Converted dates to real Excel dates.
+
+Added formula-driven business labels instead of hard-coded results.
+
+Used named ranges such as PracticeSales and PracticeProfit.
+
+Tested missing lookup keys and multi-criteria conditions.
+
+Added notes explaining when each function is appropriate.
+
+Quality Checks
+
+Formula cells are live Excel formulas.
+
+Expected results were independently calculated before workbook creation.
+
+Lookup tables use exact matching.
+
+Negative profit rows are retained because they are valid business observations.
+
+High discounts are not automatically treated as errors; they are flagged for review
