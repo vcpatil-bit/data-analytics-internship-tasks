@@ -430,3 +430,18 @@ Lookup tables use exact matching.
 Negative profit rows are retained because they are valid business observations.
 
 High discounts are not automatically treated as errors; they are flagged for review
+
+Interview Question:
+What's the difference between SUMIF and SUMIFS?	
+SUMIF applies one criterion. SUMIFS supports multiple criteria, so it is useful when an analyst needs a measure filtered by more than one business condition.
+How does XLOOKUP improve on VLOOKUP?	
+XLOOKUP can return values from either side of the lookup column, uses exact match by default, and can provide a not-found result. It is more flexible for modern Excel work.
+When would you use INDEX/MATCH instead of VLOOKUP?	
+INDEX/MATCH is useful when the return column is to the left of the lookup column or when a flexible, widely compatible lookup pattern is needed.
+What is the risk of text-vs-number mismatches in lookups?	
+A value that looks the same can still be stored differently, such as 123 as text versus 123 as a number. This can cause lookups to fail. Check data types and standardize keys before matching.
+How do you handle blank cells in formulas?	
+Use IF, IFERROR, COUNTBLANK or explicit criteria depending on the business question. Do not silently replace missing values without understanding why they are missing.
+Why use named ranges?	
+Named ranges make formulas easier to read and maintain. For example, =SUM(PracticeSales) communicates the business meaning more clearly than a long cell reference.
+
