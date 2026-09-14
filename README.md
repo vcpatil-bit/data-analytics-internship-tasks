@@ -335,7 +335,6 @@ The main deliverable is the Power BI report:
 - Underperforming or negative-profit products
 - More filters for detailed investigation
 
-In short, an executive dashboard answers "How is the business performing?", while an operations dashboard answers "What is happening and where do I need to take action?"
 
  Task 6
 
@@ -432,6 +431,7 @@ Negative profit rows are retained because they are valid business observations.
 High discounts are not automatically treated as errors; they are flagged for review
 
 Interview Question:
+
 What's the difference between SUMIF and SUMIFS?	
 SUMIF applies one criterion. SUMIFS supports multiple criteria, so it is useful when an analyst needs a measure filtered by more than one business condition.
 How does XLOOKUP improve on VLOOKUP?	
@@ -445,3 +445,168 @@ Use IF, IFERROR, COUNTBLANK or explicit criteria depending on the business quest
 Why use named ranges?	
 Named ranges make formulas easier to read and maintain. For example, =SUM(PracticeSales) communicates the business meaning more clearly than a long cell reference.
 
+Task 7 – First Chart Story: Turning Numbers into a Narrative
+1. Introduction
+
+Data visualization is an important part of data analysis because it helps transform numerical information into clear and meaningful insights. The purpose of this task is to understand how to select an appropriate basic chart for a specific analytical question and communicate the findings through a short data story.
+
+For this task, the Iris dataset was analyzed using Python, Pandas, Matplotlib, and Scikit-learn. Four visualizations were created to compare measurements across the three Iris species: Setosa, Versicolor, and Virginica.
+
+2. Objective
+
+The objectives of this task are:
+
+To understand the structure of a small dataset.
+To perform basic aggregation and analysis using Pandas.
+To select an appropriate chart type for a given analytical question.
+To create clear and labeled visualizations using Matplotlib.
+To identify important patterns from the charts.
+To convert numerical findings into a meaningful data narrative.
+3. Tools and Technologies Used
+Tool	Purpose
+Python	Programming and analysis
+Scikit-learn	Loading the Iris dataset
+Pandas	Data manipulation and aggregation
+Matplotlib	Data visualization
+Jupyter Notebook	Analysis environment
+4. Dataset Description
+
+The Iris dataset is a commonly used dataset in data science and machine learning.
+
+It contains:
+
+150 observations
+4 numerical features
+3 species
+Features
+Sepal Length
+Sepal Width
+Petal Length
+Petal Width
+Species
+Setosa
+Versicolor
+Virginica
+
+Each species contains 50 observations, making the dataset balanced.
+
+5. Loading the Dataset
+
+The Iris dataset was loaded directly from Scikit-learn.
+
+The dataset contains:
+
+150 rows and 5 columns.
+
+The five columns are:
+
+Sepal Length
+Sepal Width
+Petal Length
+Petal Width
+Species
+
+The species distribution is:
+
+Species	Number of Observations
+Setosa	50
+Versicolor	50
+Virginica	50
+Total	150
+Chart 1 – Average Sepal Length by Species
+Analytical Question
+
+Which species has the highest average sepal length?
+
+The average sepal length was calculated using Pandas:
+Chart Type
+
+Bar Chart
+
+A bar chart was selected because the objective is to compare a numerical value across discrete categories.
+
+Virginica has the highest average sepal length at approximately 6.59 cm, while Setosa has the lowest at approximately 5.01 cm.
+
+Chart 2 – Average Petal Length by Species
+Analytical Question
+
+Which species has the longest average petal length?
+
+The average petal length was calculated using:
+
+Chart Type
+
+Bar Chart
+
+The bar chart provides a clear comparison of petal length between the three species.
+
+Virginica has the longest average petal length at approximately 5.55 cm, while Setosa has substantially shorter petals at approximately 1.46 cm.
+
+Chart 3 – Average Sepal and Petal Length by Species
+Analytical Question
+
+How do average sepal and petal lengths vary across the three species?
+
+The average values were calculated using:
+
+Chart Type
+
+Line Chart
+
+The line chart was used to visualize the progression of the average measurements across the ordered species categories for this visualization exercise.
+
+Both average sepal and petal lengths increase from Setosa to Virginica, with petal length showing a particularly strong difference between the species.
+
+Chart 4 – Distribution of Iris Species
+Analytical Question
+
+Is the dataset balanced across the three species?
+
+The number of observations for each species was calculated using:
+
+Chart Type
+
+Pie Chart
+
+A pie chart was appropriate because there are only three categories and they represent parts of the total dataset.
+
+The Iris dataset is perfectly balanced, with each species representing approximately one-third of the observations.
+
+Summary Analysis
+The overall average measurements by species are:
+
+Species	Sepal Length	Sepal Width	Petal Length	Petal Width
+Setosa	5.01	3.43	1.46	0.25
+Versicolor	5.94	2.77	4.26	1.33
+Virginica	6.59	2.97	5.55	2.03
+
+The results show that Virginica generally has the largest measurements, while Setosa has the smallest measurements, particularly for petal dimensions.
+
+The major findings from the analysis are:
+
+Virginica has the highest average sepal length at approximately 6.59 cm.
+Virginica has the highest average petal length at approximately 5.55 cm.
+Setosa has the smallest petal measurements, making it noticeably different from the other two species.
+Petal length shows a strong difference between the three species.
+The dataset is perfectly balanced, with 50 records for each species.
+Simple visualizations make these differences easier to understand than looking at raw numbers alone.
+13. Data Story – Turning Numbers into a Narrative
+
+The Iris dataset contains three equally represented species: Setosa, Versicolor, and Virginica. The analysis reveals clear differences in their physical measurements.
+
+Virginica has the largest average sepal and petal measurements, whereas Setosa has the smallest. The difference is particularly noticeable in petal length, where Virginica averages approximately 5.55 cm compared with only 1.46 cm for Setosa.
+
+The visualizations also show that the average measurements generally increase from Setosa to Virginica. At the same time, the dataset itself is balanced because each species contributes exactly 50 observations.
+
+Therefore, the charts transform the raw numerical measurements into a simple story: the three species have distinct physical characteristics, with Virginica generally being the largest and Setosa the smallest in terms of the measured dimensions.
+
+Interview Questions
+Question 1: When would you choose a bar chart over a line chart?
+Answer
+
+A bar chart is preferred when comparing values across discrete categories, such as product categories, departments, or species. A line chart is generally better for showing trends or changes across an ordered sequence, especially over time.
+
+Question 2: Why are pie charts often discouraged in professional reporting?
+Answer
+
+Pie charts can make it difficult to accurately compare similar-sized segments, especially when there are many categories. Bar charts are usually easier to read and provide more precise comparisons. Pie charts are most useful when there are only a few categories and they represent meaningful parts of a whole.
