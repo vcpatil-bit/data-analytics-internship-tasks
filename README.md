@@ -610,3 +610,140 @@ Question 2: Why are pie charts often discouraged in professional reporting?
 Answer
 
 Pie charts can make it difficult to accurately compare similar-sized segments, especially when there are many categories. Bar charts are usually easier to read and provide more precise comparisons. Pie charts are most useful when there are only a few categories and they represent meaningful parts of a whole.
+
+
+**Task 8 – Sales Tracker in Google Sheets**
+
+Overview
+
+This project is a lightweight sales tracker built in Google Sheets using a retail sales transaction dataset.
+
+The tracker separates raw transactional data from the summary layer and automatically calculates daily, weekly, and monthly sales and units sold.
+
+Objective
+
+Structure raw retail sales data for ongoing use.
+
+Calculate daily, weekly, and monthly sales automatically.
+
+Apply data validation to reduce incorrect entries.
+
+Verify calculated totals against manual checks.
+
+Provide a dynamic product-category sales visualization.
+
+Dataset
+
+The project uses a retail sales transaction dataset with 1,000 records and fields including:
+
+Transaction ID
+
+Date
+
+Customer ID
+
+Gender
+
+Age
+
+Product Category
+
+Quantity
+
+Price per Unit
+
+Total Amount
+
+Source:
+https://github.com/Oragant/Retail-Sales-Dashboard/blob/main/retail_sales_dataset.csv
+
+Workbook Structure
+
+Raw Data
+
+Contains the source transactions plus:
+
+Calculated Amount
+
+Amount Check
+
+Summary
+
+Contains:
+
+Selected Date
+
+Daily Sales
+
+Daily Units Sold
+
+Week Start
+
+Weekly Sales
+
+Weekly Units Sold
+
+Month Start
+
+Monthly Sales
+
+Monthly Units Sold
+
+Manual Daily Sales
+
+Formula Daily Sales
+
+Verification
+
+Dynamic Product Category Sales table
+
+Sales by Product Category chart
+
+Key Formulas
+
+Calculated Amount
+
+=G2*H2
+
+Amount Check
+
+=IF(ROUND(I2,2)=ROUND(J2,2),"PASS","CHECK")
+
+Daily Sales
+
+=SUMIFS('Raw Data'!$I$2:$I$1001,'Raw Data'!$B$2:$B$1001,B3)
+
+Daily Units
+
+=SUMIFS('Raw Data'!$G$2:$G$1001,'Raw Data'!$B$2:$B$1001,B3)
+
+Week Start
+
+=B3-WEEKDAY(B3,2)+1
+
+Weekly Sales
+
+=SUMIFS('Raw Data'!$I$2:$I$1001,'Raw Data'!$B$2:$B$1001,">="&$B$6,'Raw Data'!$B$2:$B$1001,"<"&$B$6+7)
+
+Monthly Sales
+
+=SUMIFS('Raw Data'!$I$2:$I$1001,'Raw Data'!$B$2:$B$1001,">="&$B$9,'Raw Data'!$B$2:$B$1001,"<"&EDATE($B$9,1))
+
+Dynamic Category Sales
+
+=SUMIFS('Raw Data'!$I$2:$I$1001,'Raw Data'!$F$2:$F$1001,D2,'Raw Data'!$B$2:$B$1001,$B$3)
+Data Quality
+
+Date formatting standardized.
+
+Currency formatting applied.
+
+Quantity and price validated as positive numbers.
+
+Gender and Product Category use controlled values.
+
+Calculated Amount is compared with Total Amount.
+
+Transaction IDs were checked for uniqueness.
+
+Key fields were checked for missing values.
