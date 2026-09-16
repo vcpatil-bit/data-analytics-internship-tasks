@@ -747,3 +747,92 @@ Calculated Amount is compared with Total Amount.
 Transaction IDs were checked for uniqueness.
 
 Key fields were checked for missing values.
+
+# Task 9 – Descriptive Statistics Primer
+
+### Objective
+
+The objective of this task is to calculate and interpret descriptive statistics for key numerical variables in the Titanic dataset.
+
+The analysis focuses on understanding:
+
+- Mean
+- Median
+- Mode
+- Standard Deviation
+- Percentiles
+- Skewness
+- Data spread
+
+## Dataset
+
+**Dataset:** Titanic Dataset
+
+The dataset contains information about Titanic passengers, including passenger class, age, family relationships, ticket fare, and other passenger details.
+
+## Tools Used
+
+- Python
+- Pandas
+- Excel
+
+## Selected Numerical Columns
+
+The following five numerical columns were selected:
+
+1. Age
+2. Fare
+3. SibSp
+4. Parch
+5. Pclass
+
+## Descriptive Statistics
+
+Statistic	Age	Fare	SibSp	Parch	Pclass
+Count	714	891	891	891	891
+Mean	29.70	32.20	0.52	0.38	2.31
+Median	28.00	14.45	0.00	0.00	3.00
+Mode	24.00	8.05	0.00	0.00	3.00
+Standard Deviation	14.53	49.69	1.10	0.81	0.84
+25th Percentile	20.13	7.91	0.00	0.00	2.00
+50th Percentile	28.00	14.45	0.00	0.00	3.00
+75th Percentile	38.00	31.00	1.00	0.00	3.00
+<img width="552" height="218" alt="image" src="https://github.com/user-attachments/assets/4343a6cd-979e-41a2-99ac-5b46d12d23e9" />
+
+## Key Findings
+
+### Age
+
+The mean age is 29.70 years and the median is 28.00 years. The mean is slightly higher than the median, suggesting some positive skewness. The middle 50% of ages range from approximately 20.13 to 38.00 years.
+
+### Fare
+
+The mean fare is 32.20 while the median is 14.45. The higher mean suggests positive/right skewness, with higher fare values influencing the average. The standard deviation of 49.69 indicates substantial variability in ticket fares.
+
+### SibSp
+
+The mean is 0.52, while the median and mode are both 0.00. This indicates that having no siblings or spouses aboard was the most common observation.
+
+### Parch
+
+The mean is 0.38, while the median and mode are both 0.00. The 75th percentile is also 0.00, indicating that at least 75% of observations have zero parents or children aboard.
+
+### Pclass
+
+The mean is 2.31, while the median and mode are both 3.00. This indicates that third class is the most frequently occurring passenger class.
+
+## Interview Questions
+
+### 1. When is median a better measure of center than mean?
+
+Median is better when data is skewed or contains extreme values/outliers because it is less affected by unusually high or low observations.
+
+### 2. What does a large standard deviation tell you about a dataset?
+
+A large standard deviation indicates that observations are more widely spread around the mean, showing greater variability in the dataset.
+
+## Files Included
+
+- `Titanic-Dataset.csv` – Dataset used for the analysis
+- `Task_9_Descriptive_Statistics.ipynb` – Python/Pandas analysis
+- `Task_9_Descriptive_Statistics.xlsx` – Excel statistical summary
