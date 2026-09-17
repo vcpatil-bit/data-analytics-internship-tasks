@@ -836,3 +836,45 @@ A large standard deviation indicates that observations are more widely spread ar
 - `Titanic-Dataset.csv` – Dataset used for the analysis
 - `Task_9_Descriptive_Statistics.ipynb` – Python/Pandas analysis
 - `Task_9_Descriptive_Statistics.xlsx` – Excel statistical summary
+
+# Task 10 – Simple KPI Tracking Sheet
+
+## Tools Used
+
+- Microsoft Excel
+- Excel Tables
+- Excel Formulas
+
+## Dataset
+
+Sample Superstore Dataset
+
+The dataset contains transactional information including:
+
+- Order ID
+- Product Name
+- Category
+- Sub-Category
+- Sales
+- Quantity
+- Discount
+- Profit
+
+## KPIs Created
+
+The KPI Summary contains five key metrics:
+
+1. Total Revenue
+2. Units Sold
+3. Total Orders
+4. Average Order Value
+5. Top Product
+
+## KPI Results
+SIMPLE KPI TRACKING	
+KPI	VALUE
+Total Revenue	2327534.35
+Units Sold	38664
+Total Orders	5111.00
+Average Order Value	₹ 455.40
+Top Product	Cisco TelePresence System EX90 Videoconferencing Unit
