@@ -878,3 +878,58 @@ Units Sold	38664
 Total Orders	5111.00
 Average Order Value	₹ 455.40
 Top Product	Cisco TelePresence System EX90 Videoconferencing Unit
+
+# Task 11 – Basic Data Sorting & Filtering
+
+## Overview
+
+This task focuses on basic data exploration using sorting and filtering
+techniques in Microsoft Excel.
+
+## Dataset
+
+Sample Superstore Dataset
+
+## Objective
+
+To practice sorting and filtering and answer simple business questions
+using sales, profit, category, region, segment, quantity, and discount data.
+
+## Tools Used
+
+- Microsoft Excel
+- GitHub
+
+## Analysis Performed
+
+- Filtered records with Sales greater than $1,000
+- Identified records with negative Profit
+- Filtered Technology records from the West region
+- Filtered Consumer records with Quantity of 5 or more
+- Identified records with Discount of 50% or more and negative Profit
+- Sorted Sales from largest to smallest
+
+## Business Questions & Results
+
+Business Questions & Answers		
+		
+Sr. No.	Question	Answer
+1	How many records have Sales greater than $1,000?	470
+2	How many records have negative Profit?	1901
+3	How many Technology records are from the West region?	607
+4	How many Consumer records have Quantity of 5 or more?	1602
+5	How many records have Discount ≥ 50% and negative Profit?	940
+
+## Key Learnings
+
+- Sorting helps arrange data for easier comparison.
+- Filtering helps focus on records meeting specific conditions.
+- Multiple filters can be used together to answer business questions.
+- Raw data should be preserved rather than permanently deleting records.
+- Excel functions such as COUNTIF and COUNTIFS can support filtered analysis.
+
+## Conclusion
+
+This task provided practical experience in basic data sorting and
+filtering using Excel and demonstrated how analysts can use simple
+business conditions to explore a dataset.
