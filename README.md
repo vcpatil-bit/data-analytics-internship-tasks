@@ -933,3 +933,59 @@ Sr. No.	Question	Answer
 This task provided practical experience in basic data sorting and
 filtering using Excel and demonstrated how analysts can use simple
 business conditions to explore a dataset.
+
+# Task 12 - Missing Value Identification
+
+## bObjective
+
+Identify missing values in the Titanic dataset and summarize where they occur.
+
+Tools
+
+Pandas
+
+Dataset
+
+Titanic dataset with 891 passenger records and 12 columns.
+
+Main columns:
+PassengerId, Survived, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, Embarked
+
+Python Analysis
+
+Run:
+
+python Task_12_Missing_Value_Identification.py
+
+The script:
+
+Loads Titanic-Dataset.csv
+
+Checks dataset shape
+
+Counts missing values column-wise
+
+Calculates missing-value percentages
+
+Creates missing_value_summary.csv
+
+Does not delete or fill missing values
+
+Expected Missing-Value Summary
+
+Column | Missing Values | Missing Percentage
+Cabin  | 687            | 77.10
+Age    | 177            | 19.87
+Embarked | 2            | 0.22
+
+Findings
+
+Findings
+The Titanic dataset contains 891 records and 12 columns.
+Missing values are present in three columns: Cabin, Age, and Embarked.
+Cabin contains 687 missing values (77.10%).
+Age contains 177 missing values (19.87%).
+Embarked contains only 2 missing values (0.22%).
+The remaining columns do not contain missing values.
+Missing values were not deleted or replaced because this task focuses on identification and inspection.
+Any future treatment should consider the meaning of the variable and the amount/pattern of missingness.
