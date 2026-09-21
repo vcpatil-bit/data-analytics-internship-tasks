@@ -989,3 +989,77 @@ Embarked contains only 2 missing values (0.22%).
 The remaining columns do not contain missing values.
 Missing values were not deleted or replaced because this task focuses on identification and inspection.
 Any future treatment should consider the meaning of the variable and the amount/pattern of missingness.
+
+# Day 13 – Duplicate Record Check
+
+### Objective
+
+The objective of this task was to identify and investigate duplicate records in the Sample Superstore dataset using Microsoft Excel and Python Pandas.
+
+## Dataset
+
+Sample Superstore
+
+- Total records: 10,194
+- Total columns: 21
+
+## Tools Used
+
+- Microsoft Excel
+- Jupyter Notebook
+
+## Duplicate Checks Performed
+
+1. Complete duplicate row check
+2. Duplicate Row ID check
+3. Repeated Order ID check
+4. Repeated Order ID + Product Name check
+5. Final validation after duplicate analysis
+
+## Results
+
+No.	Check	Result
+0	Total Records	10194
+1	Exact Duplicate Rows	0
+2	Duplicate Row IDs	0
+3	Records with Repeated Order IDs	7601
+4	Records with Repeated Order ID + Product	22
+
+
+## Key Finding
+
+Repeated Order IDs do not necessarily represent duplicate records.
+
+A single order can contain multiple products or transaction line items. Therefore, repeated Order IDs were retained.
+
+The 22 records with repeated Order ID + Product Name combinations were investigated using transaction-level fields such as quantity, sales, discount and profit. They were not automatically treated as complete duplicates.
+
+## Cleaning Decision
+
+No complete duplicate rows were identified.
+
+Therefore, no records were removed from the dataset.
+
+The final cleaned dataset contains 10,194 records and 21 columns.
+
+## Excel Analysis
+
+Excel was used to:
+
+- Count records
+- Check complete duplicate rows
+- Check duplicate Row IDs
+- Identify repeated Order IDs
+- Investigate repeated Order ID + Product combinations
+- Document the audit results
+
+## Pandas Analysis
+
+The following Pandas functions were used:
+
+```python
+df.duplicated()
+df.drop_duplicates()
+df["Row ID"].duplicated()
+df["Order ID"].duplicated()
+df.duplicated(subset=["Order ID", "Product Name"])
