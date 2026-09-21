@@ -1063,3 +1063,39 @@ df.drop_duplicates()
 df["Row ID"].duplicated()
 df["Order ID"].duplicated()
 df.duplicated(subset=["Order ID", "Product Name"])
+
+# Task 14 – Basic Sales Summary
+
+## Objective
+
+Calculate three basic business KPIs in Excel:
+
+Total Sales
+
+Average Sales
+
+Transaction Count
+
+Dataset
+
+Superstore dataset 
+
+Rows: 10,194
+
+Main measure: Sales
+
+Excel table name: SalesData
+
+KPIs and Formulas
+
+BASIC SALES SUMMARY	
+KPI	Value
+Total Sales	2326534.35
+Average Sales	228.23
+Transaction Count	10194
+
+## Deliverables
+
+Summary sheet
+3 KPIs
+Formula-based calculations
