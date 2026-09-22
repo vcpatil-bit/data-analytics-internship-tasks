@@ -1099,3 +1099,91 @@ Transaction Count	10194
 Summary sheet
 3 KPIs
 Formula-based calculations
+
+# Task 15 -- Product Count Analysis
+
+## Objective
+
+Analyze the number of unique products in each product category and
+identify the category with the largest product assortment.
+
+## Dataset
+
+Sample Superstore dataset containing 10,194 transaction records.
+
+Tools Used
+
+Microsoft Excel
+
+COUNTIF
+
+COUNTIFS
+
+SUMIFS
+
+MAX
+
+INDEX & MATCH
+
+Excel Column Chart
+
+Analysis Performed
+
+Identified product categories.
+
+Created a Unique Product Flag using Product ID.
+
+Counted unique products by category.
+
+Calculated transaction counts using COUNTIF.
+
+Used COUNTIFS for multi-condition analysis.
+
+Identified the category with the largest unique product count.
+
+Created a column chart for product count comparison.
+
+Results
+
+Category            Transactions   Unique Products
+
+Furniture                  2,201               375
+Office Supplies            6,128             1,083
+Technology                 1,865               404
+
+KPI Results
+
+Largest Category: Office Supplies
+
+Largest Category Count: 1,083
+
+Total Unique Products: 1,862
+
+COUNTIF / COUNTIFS Practice
+
+Analysis                             Result
+
+Furniture Transactions                2,201
+Office Supplies Transactions          6,128
+Technology Transactions               1,865
+Furniture -- Chairs Transactions        634
+
+Key Finding
+
+Office Supplies has the largest number of unique products, with 1,083
+unique products, followed by Technology with 404 and Furniture
+with 375.
+
+Business Insight
+
+Transaction count and unique product count are different metrics. A
+single product can appear in multiple transactions, so counting rows
+does not necessarily represent the number of distinct products.
+
+Deliverables
+
+Task_15_Product_Count_Analysis.xlsx
+
+Task_15_Product_Count_Analysis_Report.docx
+
+README.md update
