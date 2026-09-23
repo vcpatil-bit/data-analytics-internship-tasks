@@ -1,3 +1,4 @@
+# Task 16 – Simple Profit Analysis
 ## Objective
 
 Compare total and average profit across product categories using the Sample Superstore dataset.
