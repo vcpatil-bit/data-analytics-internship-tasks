@@ -41,15 +41,5 @@ Use SQL Window Functions to perform ranking, comparison, running-total, and cust
 ## Files
 - `Task_23_Window_Functions.sql` – SQL queries
 - `Task_23_Report.md` – detailed task report
-- `Task_23_Interview_QA.md` – interview questions and answers
 - `SalesData_Task23_Import.sql` – SQL import script for the 10,194-row dataset
 
-## How to Run
-1. Create/select the `DataAnalytics` database.
-2. Ensure the `SalesData` table contains the dataset.
-3. Open `Task_23_Window_Functions.sql` in MySQL Workbench.
-4. Execute queries section by section.
-5. Save screenshots of important outputs for your GitHub evidence.
-
-## GitHub Suggested Folder
-`Task_23_SQL_Window_Functions/`
