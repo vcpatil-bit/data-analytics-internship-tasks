@@ -1,0 +1,9 @@
+Check,Validation Rule,Affected_Records,Status
+Missing Values,No missing values,0,PASS
+Duplicate Records,No duplicate rows,0,PASS
+Sales Range,Sales >= 0,0,PASS
+Quantity Range,Quantity > 0,0,PASS
+Discount Range,Discount between 0 and 1,0,PASS
+Order Date Validity,Valid datetime,0,PASS
+Ship Date Validity,Valid datetime,0,PASS
+Categorical Consistency,Consistent categorical values,0,PASS
