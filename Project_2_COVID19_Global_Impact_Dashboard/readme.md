@@ -10,7 +10,6 @@
 ## Dataset
 Primary source: Our World in Data (OWID), COVID-19 dataset.  
 Dataset URL: https://covid.ourworldindata.org/data/owid-covid-data.csv  
-Documentation: https://docs.owid.io/projects/etl/api/covid/  
 The notebook downloads the dataset when run. A network connection is required for the first run. OWID notes that the older GitHub repository stopped updating on 19 August 2024; the stable `covid.ourworldindata.org` URL is used here.
 
 **Attribution:** Our World in Data, COVID-19 dataset. Data is available under the Creative Commons BY license; credit the source when sharing. Review the source documentation for variable definitions and caveats.
