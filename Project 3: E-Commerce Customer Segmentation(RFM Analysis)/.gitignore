@@ -1,1 +1,11 @@
 
+# Original and cleaned datasets
+data/*.xlsx
+data/*.csv
+outputs/cleaned_online_retail.csv
+
+# Python environment and temporary files
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
